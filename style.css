@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    font-family: 'Acme', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #c6f1ff;
+}
+
+h1 {
+    color: rgb(0, 47, 255);
+    text-align: center;
+    font-size: 11vh;
+    font-weight: 500;
+}
+
+
+div#main-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vh;
+}
+
+.news-cards {
+    display: flex;
+    margin: 5vh 3vw 5vh 3vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1.4vw;
+    border-radius: 3vw;
+    border: 3px solid rgb(0, 55, 255);
+    line-height: 4vh;
+    user-select: none;
+    box-shadow: 1vh 1vh rgb(0, 0, 0);
+    height: fit-content;
+}
+
+.news-cards:hover {
+    box-shadow: 1vh 1vh rgb(62, 106, 210);
+
+}
+
+.news-cards:not(:hover) {
+    transition-duration: 0.5s;
+}
+
+.news-cards img {
+    height: 40vh;
+    margin: 3vh 3vh;
+    width: 35vw;
+}
+
+.news-cards #image-container {
+    text-align: center;
+}
+
+.news-cards h4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.1vh;
+    text-align: center;
+    line-height: 4.7vh;
+}
+
+.news-cards div:nth-of-type(2) {
+    text-align: justify;
+    margin: 0vw 2vw 1vw 2vw; 
+    line-height: 3.6vh;
+}
